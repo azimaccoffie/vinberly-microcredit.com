@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinberly Micro Credit - Empowering Dreams, Building Futures</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="Vinberly Micro Credit Logo" class="logo">
+            </a>
+            <div class="contact-icons">
+                <a href="tel:+233246738886" aria-label="Call us">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+                <a href="https://wa.me/233246738886" target="_blank" aria-label="Chat on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:azimaccoffie@gmail.com" aria-label="Email us">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="menu-icon" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#apply">Apply Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <h1>Vinberly Micro Credit</h1>
+            <p>Empowering Dreams, Building Futures</p>
+            <button onclick="location.href='#apply'">Apply for a Loan Today!</button>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2>About Us</h2>
+            <p>Vinberly Micro Credit is a leading microfinance institution dedicated to empowering individuals and small businesses across Ghana. Our mission is to provide accessible financial solutions that enable our clients to achieve their dreams, improve their livelihoods, and contribute to the economic development of their communities.</p>
+            <p>We are committed to fostering financial inclusion and sustainable growth in Ghana, West Africa, and the wider African continent. Our tailored credit facilities are designed to meet the diverse needs of our clients, helping them build a brighter future.</p>
+        </section>
+
+        <section id="services" class="content-section">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Business Loans</h3>
+                    <p>Support your entrepreneurial journey with flexible business loans.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Personal Loans</h3>
+                    <p>Meet your personal financial needs with our quick and easy personal loans.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Agricultural Loans</h3>
+                    <p>Boost your farming operations with specialized agricultural financing.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Group Loans</h3>
+                    <p>Empower your community with our collaborative group loan programs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="apply" class="content-section apply-section">
+            <h2>Apply Now</h2>
+            <p>Ready to apply for a loan? Please email your detailed application, required documents, and any inquiries to our loan application department.</p>
+            <div class="email-apply">
+                <p>Email your application to:</p>
+                <a href="mailto:azimaccoffie@gmail.com" class="email-link">azimaccoffie@gmail.com</a>
+            </div>
+            <p class="application-note">Our team will review your application and get back to you shortly. Please ensure all necessary supporting documents are attached for a swift process.</p>
+        </section>
+
+        <section id="contact" class="content-section contact-section">
+            <h2>Contact Us</h2>
+            <p>We're here to help! Get in touch with Vinberly Micro Credit through the following channels:</p>
+            <div class="contact-details">
+                <p><i class="fas fa-phone-alt"></i> Call Us: <a href="tel:+233246738886">+233 24 673 8886</a></p>
+                <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/2233246738886" target="_blank">+233 24 673 8886</a></p>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:azimaccoffie@gmail.com">azimaccoffie@gmail.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Address: Adj. Odorgonno SHS, Awoshie Abrantie Street, Accra, Ghana, West Africa</p>
+                <p><i class="fas fa-clock"></i> Operating Hours: Monday - Friday: 8:00 AM - 5:00 PM (GMT)</p>
+            </div>
+        </section>
+
+        <section id="testimonials" class="content-section testimonials-section">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide">
+                    <p>"Vinberly Micro Credit helped me expand my small business. Their support was invaluable!"</p>
+                    <span>- Ama K., Market Trader</span>
+                </div>
+                <div class="testimonial-slide">
+                    <p>"The application process was so simple, and I received my loan quickly. Highly recommend!"</p>
+                    <span>- Kofi O., Farmer</span>
+                </div>
+                <div class="testimonial-slide">
+                    <p>"Thanks to Vinberly, I was able to pay for my children's school fees. They truly empower dreams."</p>
+                    <span>- Akua P., Entrepreneur</span>
+                </div>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </section>
+
+        <section id="faq" class="content-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3 onclick="toggleFAQ(this)">What are the requirements for a loan? <i class="fas fa-chevron-down"></i></h3>
+                <div class="faq-answer">
+                    <p>Requirements vary by loan type but generally include valid ID, business registration (for business loans), proof of income, and a guarantor. Please contact us or refer to the "Apply Now" section for detailed information.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFAQ(this)">How long does it take to process a loan? <i class="fas fa-chevron-down"></i></h3>
+                <div class="faq-answer">
+                    <p>Loan processing typically takes between 24 to 72 hours, depending on the completeness of your application and verification processes.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFAQ(this)">What are your interest rates? <i class="fas fa-chevron-down"></i></h3>
+                <div class="faq-answer">
+                    <p>Our interest rates are competitive and depend on the loan amount, tenor, and type of loan. Please discuss with our loan officers for personalized information.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Vinberly Micro Credit Logo">
+                <p>Empowering Dreams, Building Futures</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#apply">Apply Now</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Adj. Odorgonno SHS, Awoshie Abrantie Street, Accra, Ghana</p>
+                <p><i class="fas fa-phone-alt"></i> <a href="tel:+233246738886">+233 24 673 8886</a></p>
+                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/233246738886" target="_blank">+233 24 673 8886</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:azimaccoffie@gmail.com">azimaccoffie@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Vinberly Micro Credit. All rights reserved. Made with <i class="fas fa-heart"></i> in Ghana.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
